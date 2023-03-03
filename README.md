@@ -22,7 +22,9 @@ As tecnologias que serão utilizadas para o desenvolvimento do projeto:
 ## :soon: Implementação futura
 Vamos iniciar com a criação do design do site e toda a documentação para começar o desenvolvimento.
 
-## :handshake: Colaboradores
+## Equipe: Erro 404
+
+### :handshake: Colaboradores
 <table>
   <tr>
     <td align="center">
