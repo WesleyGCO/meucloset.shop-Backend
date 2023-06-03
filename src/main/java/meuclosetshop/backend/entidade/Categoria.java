@@ -7,8 +7,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
@@ -16,23 +14,14 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name = "produto")
-public class Produto{
+@Table(name = "categoria")
+public class Categoria {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "descricaoCurta")
-    private String descricaoCurta;
-
-    @Column(name = "descricaoDetalhada")
-    private String descricaoDetalhada;
-
-    @Column(name = "valorCusto")
-    private double valorCusto;
-
-    @Column(name = "valorVenda")
-    private double valorVenda;
+    @Column
+    private String nome;
 
     @Column(name = "dataCriacao")
     @Temporal(TemporalType.TIMESTAMP)
@@ -41,12 +30,4 @@ public class Produto{
     @Column(name = "dataAtualizacao")
     @Temporal(TemporalType.TIMESTAMP)
     private Date dataAtualizacao;
-
-    @ManyToOne
-    @JoinColumn(name = "fk_marca") // Muda o nome da FK
-    private Marca marca;
-
-    @ManyToOne
-    @JoinColumn(name = "fk_categoria")
-    private Categoria categoria;
 }
