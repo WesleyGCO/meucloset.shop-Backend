@@ -34,6 +34,12 @@ public class Produto{
     @Column(name = "valorVenda")
     private double valorVenda;
 
+    @Column(name = "tamanho")
+    private String tamanho;
+
+    @Column(name = "cor")
+    private String cor;
+
     @Column(name = "dataCriacao")
     @Temporal(TemporalType.TIMESTAMP)
     private Date dataCriacao;
@@ -47,6 +53,6 @@ public class Produto{
     private Marca marca;
 
     @ManyToOne
-    @JoinColumn(name = "fk_categoria")
+    @JoinColumn(name = "fk_categoria") // Muda o nome da FK
     private Categoria categoria;
 }
