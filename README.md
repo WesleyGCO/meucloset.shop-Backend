@@ -44,14 +44,6 @@ Vamos iniciar com a criação do design do site e toda a documentação para com
       </a>
     </td>
     <td align="center">
-      <a href="http://github.com/brunomeedeiros">
-        <img src="https://avatars.githubusercontent.com/u/104508954?v=4" width="100px;" alt="Foto de Bruno Medeiros no GitHub"/><br>
-        <sub>
-          <b>Bruno Medeiros (Desenvolvedor)</b>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
       <a href="http://github.com/Viiitor">
         <img src="https://avatars.githubusercontent.com/u/98668723?v=4" width="100px;" alt="Foto de Vitor Felipe no GitHub"/><br>
         <sub>
